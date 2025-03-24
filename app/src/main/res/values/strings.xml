@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AC1</string>
+    <string name="tamanho_de_roupas">Tamanho de roupas:</string>
+    <string name="salvar">Salvar</string>
+    <string name="uf">UF</string>
+</resources>

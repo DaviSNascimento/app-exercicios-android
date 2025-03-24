@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="MissingConstraints"> <!-- Garante que o ScrollView ocupe toda a tela -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-54dp">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/editTextIdade"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Idade"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/editTextUF"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/uf"
+            android:minWidth="48dp"
+            tools:ignore="Autofill,TextFields" />
+
+        <EditText
+            android:id="@+id/editTextCidade"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Cidade"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+        <EditText
+            android:id="@+id/editTextTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Telefone"
+            android:inputType="phone"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/editTextNome"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Nome"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/tamanho_de_roupas"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTamanho"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="P"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/radioButtonM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="M"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/radioButtonG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+        <!-- CheckBoxes para cores preferidas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Cores preferidas:"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBranco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Branco"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/checkBoxVermelho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Vermelho"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPreto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Preto"
+            tools:ignore="HardcodedText" />
+
+        <!-- Botão para salvar -->
+
+        <!-- TextView para exibir os dados -->
+
+        <CheckBox
+            android:id="@+id/checkBoxAzul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Azul"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonSalvar"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="@string/salvar" />
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="177dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            tools:ignore="VisualLintBounds" />
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
